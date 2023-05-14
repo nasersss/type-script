@@ -95,6 +95,31 @@ let showFunction = (name: string,age: number,salary: number /*,isMarried:true = 
 
 showFunction('Ali', 25, 2500);
 
+
+// ====================================
+// Type Annotation with  Object
+// ====================================
+
+let myObject: {
+    readonly username:string,
+    id: number,
+    hire?:boolean,
+    skills:{
+        one:string,
+        two:string
+    }   
+} = {
+    username:"Hello",
+    id: 101,
+    skills:{
+        one:"HTML",
+        two:"CSS"
+    }
+}
+
+
+
+console.log(myObject)
 // in your tsconfig.json 
 // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
 // "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
