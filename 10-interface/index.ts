@@ -15,7 +15,7 @@ interface User {
     readonly id:number,
     username:string,
     country?:string,
-    old(): string,
+    sayHello(): string,
     sayWelcome: () => string,
     getDouble(num:number) : number
 }
@@ -24,7 +24,7 @@ let user1:User = {
     id:10,
     username:'Nasser',
     country:'Yemen',
-    old() {return 'Hello'},
+    sayHello() {return 'Hello'},
     sayWelcome: () => `Hello ${user1.username}`,
     getDouble(number) {return number * 2}
 
@@ -33,7 +33,7 @@ let user1:User = {
 
 console.log(user1);
 console.log(user1.sayWelcome());
-console.log(user1.old());
+console.log(user1.sayHello());
 console.log(user1.getDouble(50));
 
 /**
@@ -68,3 +68,29 @@ let userSetting: Setting  = {
 }
 
 console.log(userSetting);
+
+console.log('#'.repeat(10))
+/**
+ * Interface 
+ * ----- Extends 
+ */
+
+
+interface Moderator extends User{
+    role: number | string;
+}
+
+let moderator:Moderator = {
+    role: "admin",
+    id: 102,
+    username: "admin",
+    sayHello() { return 'Hello' },
+    sayWelcome: () => { return `Welcome Ms : ${moderator.username}` },
+    getDouble(number) { return number * 4 }
+}
+
+console.log(moderator);
+console.log(moderator.sayWelcome());
+console.log(moderator.sayHello());
+console.log(moderator.getDouble(50));
+console.log(moderator.role);
