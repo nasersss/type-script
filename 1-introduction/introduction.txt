@@ -1,0 +1,27 @@
+# Type script
+- Alternative to javascript (superset).
+- Allows us to use strict types 
+- supports modern features (arrow function, let, const)
+- Extra features (generics, interface, tuples).
+- Type Script is JavaScript with types 
+
+# Why need typescript
+1- Detect errors without running the code "static type checking"
+2- Analyze the code as you type 
+3- save some unit test as the error show while writing
+4- Will help you when you write React, vue, Angular Apps
+5- Give the missing features in js like (generics, interface, tuples ...)
+
+# How typescript works ?
+- Typescript compiler compile TS code into javascript code "This called Transpilation"
+-  
+
+# You should Know 
+- javascript
+    - Arrow function.
+    - The DOM
+    - Classes
+
+# Installation 
+ you must have install npm and nodejs 
+ - write this commend $ npm install -g typescript // this for global installation in your machine 
